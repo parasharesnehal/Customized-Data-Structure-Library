@@ -1067,68 +1067,12 @@ int Queue<T>::Count()
 
 int main()
 {
-
-     SinglyLL<float> *obj = new SinglyLL<float>;//dynamic memory allocation
-    int iRet = 0;
-
-    obj->InsertFirst(90.43);
-    obj->InsertFirst(80.43);
-    obj->InsertFirst(70.43);
-
-    obj->InsertLast(100.43);
-    obj->InsertLast(110.43);
-    obj->InsertLast(120.43);
- 
-    obj->Display();
-    iRet = obj->Count();
-    cout<<"Number of elements are : "<<iRet<<"\n";
-    
-    obj->InsertatPos(50.43, 5);
-    
-    obj->Display();
-     iRet = obj->Count();
-    cout<<"Number of elements are : "<<iRet<<"\n";
-
-    obj->InsertatPos(60.43, 6);
-     iRet = obj->Count();
-    cout<<"Number of elements are : "<<iRet<<"\n";
-
-
+    //Singly linear
+    SinglyLL<float> *obj = new SinglyLL<float>;//dynamic memory allocation
     //SinglyLL of char
     SinglyLL<char> *cobj = new SinglyLL<char>;//dynamic memory allocation
-
-    cobj->InsertFirst('a');
-    cobj->InsertFirst('b');
-    cobj->InsertFirst('c');
-
-    cobj->InsertLast('d');
-    cobj->InsertLast('e');
-    cobj->InsertLast('f');
- 
-    cobj->Display();
-    
-    
-    cobj->InsertatPos('f', 5);
-    
-    cobj->Display();
-
-    cobj->InsertatPos('g', 6);
-
-    //////////////////////////////////////
+    //doubly circular
     DoublyCL<int> *iobj = new DoublyCL<int>();
-
-    iobj->InsertFirst(51);
-    iobj->InsertFirst(21);
-    iobj->InsertFirst(11);
-
-    iobj->InsertLast(101);
-    iobj->InsertLast(111);
-    iobj->InsertLast(121);
-
-   
-    iobj->DeleteAtPos(4);
-
-    iobj->Display();
-
+    //cistomize the calls as per requirement
     return 0;
 }
